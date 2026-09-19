@@ -1,0 +1,23 @@
+<?xml version="1.0"?> 
+<!--XML is mainly used to store, structure, and exchange data-->
+<!--This is the version 1.0 and it can run without this but you can type to be safe --> 
+
+
+<people> <!--this is also know as root-->
+<!--There can only be one root element--> 
+<!--There can be multiple extra element inside root--> 
+<!--python/java variables = xml elements as a analogy--> 
+    <child> 
+        <level_of_math>4</level_of_math>
+        <speed>1.0</speed> 
+        <name>Gabi</name>
+<!--You list the element type then the amount/string inside--> 
+<!-- this is called the elements value-->
+    </child>
+<!--to close the the element ensure you put / in the closing tag-->
+    <other_people>
+        <important>yes</important> 
+        <huzz>no</huzz>
+    </other_people> 
+</people>
+<!--Indentation isn't needed but HIGHLY reccomended-->

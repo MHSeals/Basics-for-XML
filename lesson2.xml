@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--Attributes-->
+
+<!-- just using a random category-->
+<roboboatpeople>
+<!--In lesson 1 i had stated java null variable = xml element-->
+<!-- attributes are similar to variables with values-->
+    <liam height="6'4"></liam>
+<!--state the name of variable, the = and, the "" with the value inside-->
+<!-- there can be multiple attributes-->
+    <evan height="6,4" aura="unlimited"></evan>
+<!--because these elements don't have value directy in them-->
+<!--you can also close them quicker-->
+    <micah aura="999999.9999" />
+    <!-- to do this make sure you put the / at the end not the front-->
+    <hovdih aura="67">mr hovey is cool</hovdih>
+<!-- You can have attributes on elements that have value inside-->
+</roboboatpeople>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?> 
+<!--First make the root-->
+<!--Making Behavior Trees-->
+
+<Failsafe>
+<!--decide what sequence it'll work in-->
+    <Sequence>
+        <CheckGPS>
+<!-- checks if GPS works-->
+            <Current working="true" />
+        </CheckGPS>
+<!-- gives a new point to go to-->
+        <NavigatetoWayPoint latitude="47.397742" longitude="8.545594" />
+        <!--Random digits btw-->
+    </Sequence>
+<!--If the first sequence works then it won't run the second one-->
+<!--If the first one didnt work then it'll run the second-->
+    <Sequence>
+        <RecoverNav>
+<!--Because we couldnt have the GPS work we need to see better-->
+            <GoBackwards lenght="5 meters" />
+            <GetABetterLook rotate="45 degrees" />
+<!--Step back and rotate to see better-->
+        </RecoverNav>
+        <Stop reason="GPS Failed"/>
+<!--Then stop before doing anything else-->
+    </Sequence>
+</Failsafe>
+<!-- it'll try to get to a new point based on GPS-->
+<!--If it cant complete the task it'll move on-->
+<!--Which means moving back to see better-->
+<!--Then once it can see better it stops before going on-->
