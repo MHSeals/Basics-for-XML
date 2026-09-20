@@ -1,6 +1,6 @@
 # Basics-for-XML
 
-# Behavior Trees & XML Learning
+# Behavior Trees & XML Basics
 A personal learning repository documenting my progression from learning XML to understanding and creating Behavior Trees for robotics.
 The goal is to build a strong understanding of how XML represents Behavior Trees and eventually connect that knowledge to the Python code used to implement the actual behaviors.
 
